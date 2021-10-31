@@ -1,0 +1,47 @@
+{% extends "todo/base.html" %}
+
+{% block content %}
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <style>
+        .button {
+            background-color: skyblue; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+          }
+          
+          .button1 {
+            background-color: white; 
+            color: black; 
+            border: 2px solid skyblue;
+          }
+          
+          .button1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            background-color: skyblue;
+            color: white;
+          }
+    </style>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+
+                 <h1>Simplify Your Todos!</h1>
+            <p>Life is fun. But life is also busy. There's a million different things you could be doing. But what matters is <u>what</u> you do. We created <b><i>Todo Woo</i></b> to help you make sense of all of your opportunities and live that life that matters most to you. Your new organized life awaits.</p>
+        <a role="button" class="button button1" href="{% url 'signupuser' %}">Start</a>
+        </div>
+    </div>
+
+{% endblock %}
